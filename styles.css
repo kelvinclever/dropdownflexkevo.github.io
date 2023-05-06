@@ -1,0 +1,253 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,500;0,700;0,800;0,900;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+    height:75px;
+    line-height: 75px;
+    padding: 0px 80px;
+    flex-wrap: wrap;
+}
+.menu{
+    display:none ;
+    cursor: pointer;
+}
+
+.Menulogo{
+    display: flex;
+    align-items: center;
+    line-height: 60px;
+    justify-content: space-between;
+
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+
+}
+ul li a{
+    margin: 10px;;
+    text-decoration: none;
+    color: rgba(12, 12, 12, 0.767);
+}
+.items{
+    align-items: center;
+    line-height: 40px;
+}
+.logo img{
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 0;
+    line-height: 20px;
+
+}
+
+ul li a:hover{
+    transition: 0.3ms;
+    color: black;
+}
+
+.authentication{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#RegisterBtn{
+    padding:  10px;
+    border-radius: 10px;
+    margin-left:2px;
+    cursor: pointer;
+}
+#loginBtn{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+ul li:hover{
+    border-bottom: 3px solid black;
+    color: black;
+    
+}
+ul li:hover:nth-child(1){
+    line-height: 80px;
+}
+ul li:hover:nth-child(2){
+    line-height: 80px;
+}
+#icon-menu{
+    display:none ;
+}
+.features ,.company{
+    display: none;
+
+}
+
+.itemsMenu ul li:hover .features{
+display: block;
+position: absolute;
+margin-top: 15px;
+margin-left: -15px;
+background-color:white;
+
+}
+.itemsMenu ul li:hover .company{
+
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+.itemsMenu ul li:hover .features ul{
+    display: block;
+
+}
+.itemsMenu ul li:hover  img{
+   
+display: none;
+}
+
+.itemsMenu ul li:hover .company ul{
+    display: block;
+    left: 200px;
+    text-align: left;
+   
+    margin:0;
+    line-height: 30px;
+}
+.itemsMenu ul li:hover .features ul  {
+    left: 200px;
+    text-align: left;
+    transform:translateX(-0px);
+    margin:0;
+}
+
+.content{
+    /**display: inline-flex;**/
+    width: 70px;
+    height: 70px;
+    margin-left: 10rem;
+    margin-right:20rem;
+    padding: 0;
+
+        display:flex;
+        flex-wrap:rap;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.pro_pic img{
+    margin-top: 0%;
+    width:70vh;
+    height:80vh;
+    margin-left: 90px;
+    margin-right: 100px;
+    
+
+}
+.pro_pic{
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textDes{
+    margin-top: 60px;
+}
+.textDes p{
+    margin-top: 30px;
+}
+.textDes h1{
+    font-weight: 500px;
+    font-size:50px;
+}
+#learnMore{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 7px;
+    margin-top: 5rem;
+}
+.footerIcons{
+   
+    transform: translateY(70px);
+}
+#learnMore:hover{
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+}
+.footerIcons{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footerIcons img{
+    padding: 3px;
+    background-image: url('./images/image-hero-desktop.png')
+    ;margin:10px;
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width:800px){
+    header{
+        padding: 0px 50px;
+    }
+    .menu{
+        display: block;
+        
+    }
+    .logo{
+
+    }
+    ul{
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        position: fixed;
+        top: 75px;
+        left:0;
+        text-align: center;
+        display: block;
+        line-height:60px;
+    }
+    #RegisterBtn{
+        margin-right:90px;
+
+    }
+    #loginBtn{
+        margin-left: 60px;
+    }
+    ul li:hover:last-child{
+        border: none;
+    }
+    .authentication #icon-menu ~ ul li a{
+        display: none;
+    
+    }
+
+    .footerIcons{
+        display: none;
+    }
+    
+}
